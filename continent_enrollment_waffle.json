@@ -84,7 +84,7 @@
               "condition": {"test": "datum.Plot == '_blank'", "value": "#e6e3e3"},
               "scale": {
                 "domain": ["Africa", "Asia", "Europe", "North America", "Oceania", "South America"],
-                "range": ["#E69F00", "#56B4E9", "#0072B2", "#D55E00", "#CC79A7", "#F0E442"]
+                "range": ["#008000", "#FF0000", "#0072B2", "#D55E00", "#CC79A7", "#F0E442"]
               },
               "field": "Plot",
               "type": "nominal",
