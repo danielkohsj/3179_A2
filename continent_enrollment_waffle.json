@@ -66,7 +66,7 @@
       {"calculate": "ceil(datum.Sequence / 10)", "as": "row"},
       {"calculate": "datum.Sequence - datum.row * 10", "as": "col"}
     ],
-    "facet": {"column": {"field": "Continent", "header": {"labelOrient": "bottom", "labelFont": "Nunito Sans", "labelFontSize": 14, "title": null}}},
+    "facet": {"column": {"field": "Continent", "header": {"labelOrient": "bottom", "labelFont": "Times New Roman", "labelFontSize": 14, "title": null}}},
     "spec": {
       "layer": [
         {
