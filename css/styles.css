@@ -27,7 +27,10 @@ body {
 }
 
 .vis-container {
-    width: 100%;
+    max-width: 900px; /* Set a maximum width */
+    margin: 0 auto; /* Center the chart within the page */
+    height: auto; /* Let the height adjust automatically */
+    padding: 20px; /* Optional: Add some padding for better spacing */
 }
 
 .description {
