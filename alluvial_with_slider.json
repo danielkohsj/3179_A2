@@ -1,9 +1,16 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.2.json",
-  "height": 300,
-  "width": 600,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "height": 435,
+  "width": 615,
   "title": {
-    "text": "Where Do Students from Different Continents Pursue Tertiary Education?"
+    "text": "Where Do Students from Different Continents Pursue Tertiary Education?",
+    "font": "Nunito Sans",
+    "fontSize": 17,
+    "anchor": "start"
   },
   "signals": [
     {
@@ -189,7 +196,6 @@
       "type": "band",
       "range": "width",
       "domain": ["stk1", "stk2"],
-      "paddingOuter": 0.05,
       "paddingInner": 0.95
     },
     {
@@ -283,11 +289,18 @@
           "align": {"signal": "datum.rightLabel ? 'left' : 'right'"},
           "baseline": {"value": "middle"},
           "fontWeight": {"value": "bold"},
+          "font": {"value": "Nunito Sans"},
           "text": {
             "signal": "abs(datum.scaledY0 - datum.scaledY1) > 13 ? datum.grpId : ''"
           }
         }
       }
     }
-  ]
+  ],
+  "config": {
+    "title": {"font": "Nunito Sans"},
+    "axis": {"labelFont": "Nunito Sans", "titleFont": "Nunito Sans"},
+    "legend": {"labelFont": "Nunito Sans", "titleFont": "Nunito Sans"},
+    "text": {"font": "Nunito Sans"}
+  }
 }

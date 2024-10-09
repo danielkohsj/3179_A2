@@ -1,16 +1,25 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 900,
-    "height": 400,
+    "autosize": {
+      "type": "fit",
+      "contains": "padding"
+    },
+    "background": "transparent",
     "data": {
       "url": "https://raw.githubusercontent.com/danielkohsj/3179_A2/refs/heads/main/data/dataset_main.csv",
       "format": {"type": "csv"}
     },
-    "title": {
-      "text": "Average Tertiary Enrollment by Continent",
-      "fontSize": 20,
-      "anchor": "start",
-      "color": "black"
+    "config": {
+      "axis": {
+        "labelFont": "Nunito Sans",
+        "titleFont": "Nunito Sans"
+      },
+      "title": {
+        "font": "Nunito Sans"
+      },
+      "text": {
+        "font": "Nunito Sans"
+      }
     },
     "params": [
       {
@@ -57,7 +66,7 @@
       {"calculate": "ceil(datum.Sequence / 10)", "as": "row"},
       {"calculate": "datum.Sequence - datum.row * 10", "as": "col"}
     ],
-    "facet": {"column": {"field": "Continent", "header": {"labelOrient": "bottom"}}},
+    "facet": {"column": {"field": "Continent", "header": {"labelOrient": "bottom", "labelFont": "Nunito Sans", "labelFontSize": 14, "title": null}}},
     "spec": {
       "layer": [
         {
@@ -89,7 +98,7 @@
           }
         },
         {
-          "mark": {"type": "text", "fontSize": 30, "fontWeight": "bold"},
+          "mark": {"type": "text", "fontSize": 30, "fontWeight": "bold", "font": "Nunito Sans"},
           "encoding": {
             "yOffset": {"value": -70},
             "text": {
