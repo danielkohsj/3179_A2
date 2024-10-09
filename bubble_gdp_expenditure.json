@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 400,
+  "title": "How much do countries spend on education based on their income per person?",
+  "data": {
+    "url": "https://raw.githubusercontent.com/danielkohsj/3179_A2/refs/heads/main/data/modified_dataset_main.csv"
+  },
+  "transform": [
+    {"filter": "datum['Year'] == year_selection"},
+    {"filter": "datum['School enrollment, tertiary (% gross)'] != null"},
+    {"filter": "datum['Adjusted savings: education expenditure (current US$)'] != null"},
+    {"filter": "datum['Population, total'] != null && datum['Population, total'] > 0"},
+    {
+      "calculate": "datum['Adjusted savings: education expenditure (current US$)'] / datum['Population, total']", 
+      "as": "Education Expenditure per Capita"
+    }
+  ],
+  "params": [
+    {
+      "name": "year_selection",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 1990,
+        "max": 2021,
+        "step": 1,
+        "name": "Year"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "GDP per capita (current US$)",
+      "type": "quantitative",
+      "title": "GDP Per Capita (in US$)",
+      "axis": {"labelAngle": -45},
+      "scale": {"type": "linear", "domain": [0, 110000]}
+    },
+    "y": {
+      "field": "Education Expenditure per Capita",
+      "type": "quantitative",
+      "title": "Education Expenditure per Capita (US$)"
+    },
+    "size": {
+      "field": "Population, total",
+      "type": "quantitative",
+      "title": "Population",
+      "scale": {
+        "type": "threshold",
+        "domain": [1000000, 10000000, 50000000, 100000000, 500000000],
+        "range": [10, 50, 150, 200, 300, 400]
+      },
+      "legend": {"format": ".1s"}
+    },
+    "color": {
+      "field": "School enrollment, tertiary (% gross)",
+      "type": "quantitative",
+      "title": "Tertiary Enrollment (%)",
+      "scale": {
+        "type": "linear",
+        "range": ["#ffcccc", "#800000"]
+      }
+    },
+    "tooltip": [
+      {"field": "Country", "type": "nominal"},
+      {"field": "Population, total", "type": "quantitative", "format": ","},
+      {"field": "GDP per capita (current US$)", "type": "quantitative", "format": ",.2f", "title": "GDP per capita (US$)"},
+      {"field": "Education Expenditure per Capita", "type": "quantitative", "format": ".2f", "title": "Education Expenditure per Capita (US$)"},
+      {"field": "School enrollment, tertiary (% gross)", "type": "quantitative", "format": ".2f", "title": "Tertiary enrollment (%)"}
+    ]
+  },
+  "mark": "circle"
+}

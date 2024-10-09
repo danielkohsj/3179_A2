@@ -1,0 +1,73 @@
+body *{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-weight: 800;
+    text-align: center; /* Centers the heading */
+    background-color: #f0f0f0; /* Add a light gray background */
+    padding: 20px 0px 20px 0px; /* Adds padding inside the box */
+    border: 2px solid #ccc; /* Adds a subtle border around the heading */
+    border-radius: 10px; /* Adds rounded corners */
+    width: 100%; /* Ensure the box spans the full width */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.page {
+    width: 900px;
+    background-color: rgb(231, 247, 244);
+    margin: auto;
+    padding: 50px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+
+.vis-container {
+    width: 100%;
+}
+
+.description {
+    width: 100%;
+}
+
+/* .description h2,
+h1 {
+    margin-top: 0px;
+} */
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.description-right {
+    padding-left: 20px;
+}
+
+.description-left {
+    padding-right: 20px;
+}
+
+.pure-g {
+    margin-bottom: 20px;
+}
+
+.small-font {
+    font-size: 14px;
+}
+
+.footer-font {
+    font-size: 13px;
+    margin-bottom: 0px;
+}

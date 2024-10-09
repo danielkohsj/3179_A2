@@ -1,0 +1,110 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/danielkohsj/3179_A2/refs/heads/main/data/dataset_main.csv",
+      "format": {"type": "csv"}
+    },
+    "title": {
+      "text": "Average Tertiary Enrollment by Continent",
+      "fontSize": 20,
+      "anchor": "start",
+      "color": "black"
+    },
+    "params": [
+      {
+        "name": "selectedYear",
+        "value": 2021,
+        "bind": {
+          "input": "range",
+          "min": 1990,
+          "max": 2021,
+          "step": 1,
+          "name": "Select Year: "
+        }
+      }
+    ],
+    "transform": [
+      {
+        "filter": "datum.Year == selectedYear"
+      },
+      {
+        "aggregate": [{"op": "mean", "field": "School enrollment, tertiary (% gross)", "as": "AvgTertiaryEnrollment"}],
+        "groupby": ["Continent"]
+      },
+      {
+        "joinaggregate": [{"op": "count", "field": "Continent", "as": "TotalContinents"}]
+      },
+      {
+        "joinaggregate": [{"op": "count", "field": "Continent", "as": "TotalContinentsGrouped"}],
+        "groupby": ["Continent"]
+      },
+      {
+        "calculate": "round(datum.TotalContinentsGrouped/datum.TotalContinents * 100)",
+        "as": "PercentOfTotal"
+      },
+      {
+        "aggregate": [{"op": "min", "field": "AvgTertiaryEnrollment", "as": "Percent"}],
+        "groupby": ["Continent"]
+      },
+      {"calculate": "sequence(1,101)", "as": "Sequence"},
+      {"flatten": ["Sequence"]},
+      {
+        "calculate": "if(datum.Sequence <= datum.Percent, datum.Continent, '_blank')",
+        "as": "Plot"
+      },
+      {"calculate": "ceil(datum.Sequence / 10)", "as": "row"},
+      {"calculate": "datum.Sequence - datum.row * 10", "as": "col"}
+    ],
+    "facet": {"column": {"field": "Continent", "header": {"labelOrient": "bottom"}}},
+    "spec": {
+      "layer": [
+        {
+          "mark": {
+            "type": "circle",
+            "filled": true,
+            "tooltip": true,
+            "stroke": "#9e9b9b",
+            "strokeWidth": 0.7
+          },
+          "encoding": {
+            "x": {"field": "col", "type": "ordinal", "axis": null},
+            "y": {"field": "row", "type": "ordinal", "axis": null, "sort": "-y"},
+            "color": {
+              "condition": {"test": "datum.Plot == '_blank'", "value": "#e6e3e3"},
+              "scale": {
+                "domain": ["Africa", "Asia", "Europe", "North America", "Oceania", "South America"],
+                "range": ["#E69F00", "#56B4E9", "#0072B2", "#D55E00", "#CC79A7", "#F0E442"]
+              },
+              "field": "Plot",
+              "type": "nominal",
+              "legend": null
+            },
+            "size": {"value": 241},
+            "tooltip": [
+              {"field": "Continent", "type": "nominal"},
+              {"field": "Percent", "type": "quantitative", "title": "Tertiary Enrollment (%)", "format": ".2f"}
+            ]
+          }
+        },
+        {
+          "mark": {"type": "text", "fontSize": 30, "fontWeight": "bold"},
+          "encoding": {
+            "yOffset": {"value": -70},
+            "text": {
+              "condition": {
+                "test": "datum.Sequence == 1",
+                "value": {"expr": "format(datum.Percent, '.2f') + '%'"}
+              }
+            },
+            "color": {
+              "condition": {
+                "test": "datum.Plot == '_blank'",
+                "value": "#4B4B4B"
+              },
+              "value": "black"
+            }
+          }
+        }
+      ]
+    }
+  }
