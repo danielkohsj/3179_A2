@@ -62,37 +62,37 @@
       }
     }
   ],
-  "encoding": {
-    "x": {
-      "field": "GDP per capita",
-      "type": "quantitative",
-      "title": "GDP Per Capita (in US$)",
-      "axis": {
-        "labelAngle": -45,
-        "tickCount": 7
-      },
-      "scale": {
-        "type": "pow",
-        "exponent": 0.5,
-        "domain": [0, 100000]
-      }
-    },
-    "y": {
-      "field": "School enrollment, tertiary",
-      "type": "quantitative",
-      "title": "Tertiary Education Enrollment Rate (%)"
-    }
-  },
   "layer": [
     {
       "selection": {
-        "grid": {
-          "type": "interval",
-          "bind": "scales"
+        "hover": {
+          "type": "single",
+          "on": "mouseover",
+          "clear": "mouseout",
+          "empty": "all"
         }
       },
       "mark": "circle",
       "encoding": {
+        "x": {
+          "field": "GDP per capita",
+          "type": "quantitative",
+          "title": "GDP Per Capita (in US$)",
+          "axis": {
+            "labelAngle": -45,
+            "tickCount": 7
+          },
+          "scale": {
+            "type": "pow",
+            "exponent": 0.5,
+            "domain": [0, 100000]
+          }
+        },
+        "y": {
+          "field": "School enrollment, tertiary",
+          "type": "quantitative",
+          "title": "Tertiary Education Enrollment Rate (%)"
+        },
         "color": {
           "field": "Continent",
           "type": "nominal",
@@ -115,7 +115,13 @@
             ]
           }
         },
-        "opacity": { "value": 0.6 },
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "value": 0.7
+          },
+          "value": 0.2
+        },
         "size": {
           "field": "Population",
           "type": "quantitative",
@@ -164,11 +170,19 @@
         "fontStyle": "italic"
       },
       "encoding": {
+        "x": {
+          "field": "GDP per capita",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "School enrollment, tertiary",
+          "type": "quantitative"
+        },
         "text": { "field": "Country", "type": "nominal" },
         "color": { "value": "black" },
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'China' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country'] == 'India' || datum['Country'] == 'United States'",
+            "test": "datum['Country'] == 'China' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country'] == 'United States' || datum['Country'] == 'Norway'",
             "value": 1
           },
           "value": 0
