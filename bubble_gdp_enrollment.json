@@ -13,9 +13,15 @@
     "url": "https://raw.githubusercontent.com/danielkohsj/3179_W10/refs/heads/main/data/gdp_population.csv"
   },
   "transform": [
-    {"filter": "year_selection == null || datum.Year == year_selection"},
-    {"filter": "datum['School enrollment, tertiary'] != null"},
-    {"filter": "continent_selection == null || datum.Continent == continent_selection"}
+    {
+      "filter": "year_selection == null || datum.Year == year_selection"
+    },
+    {
+      "filter": "datum['School enrollment, tertiary'] != null"
+    },
+    {
+      "filter": "continent_selection == null || datum.Continent == continent_selection"
+    }
   ],
   "params": [
     {
@@ -79,6 +85,12 @@
   },
   "layer": [
     {
+      "selection": {
+        "grid": {
+          "type": "interval",
+          "bind": "scales"
+        }
+      },
       "mark": "circle",
       "encoding": {
         "color": {
@@ -103,22 +115,42 @@
             ]
           }
         },
-        "opacity": {"value": 0.6},
+        "opacity": { "value": 0.6 },
         "size": {
           "field": "Population",
           "type": "quantitative",
           "scale": {
             "type": "threshold",
-            "domain": [1000000, 10000000, 50000000, 100000000, 500000000],
+            "domain": [
+              1000000,
+              10000000,
+              50000000,
+              100000000,
+              500000000
+            ],
             "range": [10, 50, 150, 200, 300, 400]
           },
-          "legend": {"format": ".1s"}
+          "legend": { "format": ".1s" }
         },
         "tooltip": [
-          {"field": "Country", "type": "nominal"},
-          {"field": "Population", "type": "quantitative", "format": ","},
-          {"field": "GDP per capita", "type": "quantitative", "format": ",.2f", "title": "GDP per capita (US$)"},
-          {"field": "School enrollment, tertiary", "type": "quantitative", "format": ".2f", "title": "Tertiary enrollment (%)"}
+          { "field": "Country", "type": "nominal" },
+          {
+            "field": "Population",
+            "type": "quantitative",
+            "format": ","
+          },
+          {
+            "field": "GDP per capita",
+            "type": "quantitative",
+            "format": ",.2f",
+            "title": "GDP per capita (US$)"
+          },
+          {
+            "field": "School enrollment, tertiary",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "Tertiary enrollment (%)"
+          }
         ]
       }
     },
@@ -132,8 +164,8 @@
         "fontStyle": "italic"
       },
       "encoding": {
-        "text": {"field": "Country", "type": "nominal"},
-        "color": {"value": "black"},
+        "text": { "field": "Country", "type": "nominal" },
+        "color": { "value": "black" },
         "opacity": {
           "condition": {
             "test": "datum['Country'] == 'China' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country'] == 'India' || datum['Country'] == 'United States'",
@@ -142,10 +174,24 @@
           "value": 0
         },
         "tooltip": [
-          {"field": "Country", "type": "nominal"},
-          {"field": "Population", "type": "quantitative", "format": ","},
-          {"field": "GDP per capita", "type": "quantitative", "format": ",.2f", "title": "GDP per capita (US$)"},
-          {"field": "School enrollment, tertiary", "type": "quantitative", "format": ".2f", "title": "Tertiary enrollment (%)"}
+          { "field": "Country", "type": "nominal" },
+          {
+            "field": "Population",
+            "type": "quantitative",
+            "format": ","
+          },
+          {
+            "field": "GDP per capita",
+            "type": "quantitative",
+            "format": ",.2f",
+            "title": "GDP per capita (US$)"
+          },
+          {
+            "field": "School enrollment, tertiary",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "Tertiary enrollment (%)"
+          }
         ]
       }
     }
