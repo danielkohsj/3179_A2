@@ -65,6 +65,10 @@
   "layer": [
     {
       "selection": {
+        "grid": {
+          "type": "interval",
+          "bind": "scales"
+        },
         "hover": {
           "type": "single",
           "on": "mouseover",
@@ -117,7 +121,7 @@
         },
         "opacity": {
           "condition": {
-            "param": "hover",
+            "selection": "hover",
             "value": 0.7
           },
           "value": 0.2
@@ -172,7 +176,12 @@
       "encoding": {
         "x": {
           "field": "GDP per capita",
-          "type": "quantitative"
+          "type": "quantitative",
+          "scale": {
+            "type": "pow",
+            "exponent": 0.5,
+            "domain": [0, 100000]
+          }
         },
         "y": {
           "field": "School enrollment, tertiary",
