@@ -21,22 +21,9 @@
       "font": "Nunito Sans"
     }
   },
-  "params": [
-    {
-      "name": "selectedYear",
-      "value": 2021,
-      "bind": {
-        "input": "range",
-        "min": 1990,
-        "max": 2021,
-        "step": 1,
-        "name": "Select Year: "
-      }
-    }
-  ],
   "transform": [
     {
-      "filter": "datum.Year == selectedYear"
+      "filter": "datum.Year == 2021"
     },
     {
       "aggregate": [{"op": "mean", "field": "School enrollment, tertiary (% gross)", "as": "AvgTertiaryEnrollment"}],
@@ -66,7 +53,17 @@
     {"calculate": "ceil(datum.Sequence / 10)", "as": "row"},
     {"calculate": "datum.Sequence - datum.row * 10", "as": "col"}
   ],
-  "facet": {"column": {"field": "Continent", "header": {"labelOrient": "bottom", "labelFont": "Nunito Sans", "labelFontSize": 14, "title": null}}},
+  "facet": {
+    "column": {
+      "field": "Continent",
+      "header": {
+        "labelOrient": "bottom",
+        "labelFont": "Nunito Sans",
+        "labelFontSize": 14,
+        "title": null
+      }
+    }
+  },
   "spec": {
     "layer": [
       {
