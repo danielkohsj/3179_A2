@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "autosize": {
-    "type": "fit", 
+    "type": "fit",
     "contains": "padding"
   },
   "width": 700,
@@ -70,6 +70,30 @@
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
           {"field": "Value", "type": "quantitative", "title": "Enrollment Rate (%)"}
         ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"continent": "Africa", "lon": 20, "lat": 10},
+          {"continent": "Asia", "lon": 90, "lat": 45},
+          {"continent": "Europe", "lon": 10, "lat": 50},
+          {"continent": "North America", "lon": -100, "lat": 40},
+          {"continent": "South America", "lon": -57, "lat": -12},
+          {"continent": "Oceania", "lon": 157, "lat": -27}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "fill": "black"
+      },
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "continent"},
+        "tooltip": {"field": "continent", "type": "nominal", "title": "Continent"}
       }
     }
   ],
