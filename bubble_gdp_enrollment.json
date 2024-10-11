@@ -84,7 +84,8 @@
           "title": "GDP Per Capita (in US$)",
           "axis": {
             "labelAngle": -45,
-            "tickCount": 7
+            "tickCount": 7,
+            "grid": false
           },
           "scale": {
             "type": "pow",
@@ -177,7 +178,7 @@
         "color": { "value": "black" },
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'China' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country'] == 'United States' || datum['Country'] == 'Norway'",
+            "test": "datum['Country'] == 'China' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Greece' || datum['Country'] == 'Norway'",
             "value": 1
           },
           "value": 0

@@ -148,7 +148,8 @@
       "encoding": {
         "x": {
           "field": "GDP per capita (current US$)",
-          "type": "quantitative"
+          "type": "quantitative",
+          "axis": {"grid": false}
         },
         "y": {
           "field": "Education Expenditure Per Capita",
