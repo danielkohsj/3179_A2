@@ -97,7 +97,8 @@
       {
         "mark": {"type": "text", "fontSize": 30, "fontWeight": "bold", "font": "Nunito Sans"},
         "encoding": {
-          "yOffset": {"value": -70},
+        "x": {"value": 106},
+        "y": {"value": 180},
           "text": {
             "condition": {
               "test": "datum.Sequence == 1",
