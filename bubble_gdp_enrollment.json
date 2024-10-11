@@ -101,22 +101,8 @@
           "field": "Continent",
           "type": "nominal",
           "scale": {
-            "domain": [
-              "North America",
-              "South America",
-              "Europe",
-              "Africa",
-              "Asia",
-              "Oceania"
-            ],
-            "range": [
-              "#e41a1c",
-              "#984ea3",
-              "#ff7f00",
-              "#a6cee3",
-              "#377eb8",
-              "#a65628"
-            ]
+            "domain": ["Africa", "Asia", "Europe", "North America", "Oceania", "South America"],
+            "range": ["#E69F00", "#56B4E9", "#0072B2", "#D55E00", "#CC79A7", "#F0E442"]
           }
         },
         "opacity": {

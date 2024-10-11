@@ -14,17 +14,6 @@
   },
   "signals": [
     {
-      "name": "selectedYear",
-      "value": 2021,
-      "bind": {
-        "input": "range", 
-        "min": 2015,
-        "max": 2021,
-        "step": 1, 
-        "name": "Select Year: "
-      }
-    },
-    {
       "name": "groupSelector",
       "value": false,
       "on": [
@@ -66,7 +55,7 @@
       "transform": [
         {
           "type": "filter", 
-          "expr": "datum['Year'] == selectedYear && datum['Value'] != null"
+          "expr": "datum['Year'] == 2021 && datum['Value'] != null"
         },
         {
           "type": "aggregate",
@@ -208,8 +197,18 @@
     {
       "name": "color",
       "type": "ordinal",
-      "range": "category",
-      "domain": {"data": "tertiary_education_flow", "fields": ["stk1", "stk2"]}
+      "domain": {
+        "fields": [
+          ["Africa", "Asia", "Europe", "North America", "Oceania", "South America"],
+          {"data": "groups", "field": "grpId", "filter": "datum.stack == 'stk2'"}
+        ]
+      },
+      "range": [
+        "#E69F00", "#56B4E9", "#0072B2", "#D55E00", "#CC79A7", "#F0E442",
+        "#1f77b4", "#ff7f0e",  "#d62728", "#9467bd", "#8c564b",
+        "#e377c2", "#7f7f7f", "#bcbd22", "#17becf", "#aec7e8", "#ffbb78", "#ff9896", "#c5b0d5", "#c49c94", "#f7b6d2", "#c7c7c7",
+        "#dbdb8d"
+      ]
     },
     {
       "name": "stackNames",
