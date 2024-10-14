@@ -109,7 +109,7 @@ p {
 }
 
 h6 {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -123,15 +123,6 @@ h6 {
 
 .pure-g {
     margin-bottom: 15px;
-}
-
-.small-font {
-    font-size: 14px;
-}
-
-.footer-font {
-    font-size: 10px;
-    margin-bottom: 0px;
 }
 
 .pure-u-1-1 {
