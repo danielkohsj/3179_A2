@@ -28,7 +28,7 @@
       "filter": "datum['Population, total'] != null && datum['Population, total'] > 0"
     },
     {
-      "filter": "continent_selection == 'All Continents' || datum['Continent'] == continent_selection"
+      "filter": "continent_selection == 'Show All' || datum['Continent'] == continent_selection"
     },
     {
       "calculate": "datum['Adjusted savings: education expenditure (current US$)'] / datum['Population, total']",
@@ -49,7 +49,7 @@
     },
     {
       "name": "continent_selection",
-      "value": "All Continents",
+      "value": "Show All",
       "bind": {
         "input": "select",
         "options": [
