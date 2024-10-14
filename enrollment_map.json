@@ -4,6 +4,34 @@
   "height": 350,
   "background": "transparent",
   "projection": {"type": "equalEarth"},
+  "params": [
+    {
+      "name": "continent_selector",
+      "value": "All Continents",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All Continents",
+          "Asia",
+          "Africa",
+          "Europe",
+          "North America",
+          "South America",
+          "Oceania"
+        ],
+        "labels": [
+          "All Continents",
+          "Asia",
+          "Africa",
+          "Europe",
+          "North America",
+          "South America",
+          "Oceania"
+        ],
+        "name": "Continent Selector: "
+      }
+    }
+  ],
   "layer": [
     {
       "data": {
@@ -19,8 +47,11 @@
               "format": {"type": "csv"}
             },
             "key": "Country Name",
-            "fields": ["Value"]
+            "fields": ["Value", "Continent"]
           }
+        },
+        {
+          "filter": "continent_selector == 'All Continents' || datum.Continent == continent_selector"
         }
       ],
       "selection": {
@@ -56,7 +87,8 @@
         },
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-          {"field": "Value", "type": "quantitative", "title": "Enrollment Rate (%)", "format": ".2f"}
+          {"field": "Value", "type": "quantitative", "title": "Enrollment Rate (%)", "format": ".2f"},
+          {"field": "Continent", "type": "nominal", "title": "Continent"}
         ]
       }
     },
@@ -101,30 +133,6 @@
         "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
       },
       "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
-    },
-    {
-      "data": {
-        "values": [
-          {"continent": "Africa", "lon": 20, "lat": 10},
-          {"continent": "Asia", "lon": 90, "lat": 45},
-          {"continent": "Europe", "lon": 10, "lat": 50},
-          {"continent": "North America", "lon": -100, "lat": 40},
-          {"continent": "South America", "lon": -57, "lat": -12},
-          {"continent": "Oceania", "lon": 157, "lat": -27}
-        ]
-      },
-      "mark": {
-        "type": "text",
-        "fontSize": 12,
-        "fontWeight": "bold",
-        "fill": "black"
-      },
-      "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"},
-        "text": {"field": "continent"},
-        "tooltip": {"field": "continent", "type": "nominal", "title": "Continent"}
-      }
     }
   ],
   "config": {
