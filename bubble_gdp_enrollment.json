@@ -10,14 +10,14 @@
     "anchor": "start"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/danielkohsj/3179_W10/refs/heads/main/data/gdp_population.csv"
+    "url": "https://raw.githubusercontent.com/danielkohsj/3179_A2/refs/heads/main/data/modified_dataset_main.csv"
   },
   "transform": [
     {
       "filter": "year_selection == null || datum.Year == year_selection"
     },
     {
-      "filter": "datum['School enrollment, tertiary'] != null"
+      "filter": "datum['School enrollment, tertiary (% gross)'] != null"
     },
     {
       "filter": "continent_selection == null || datum.Continent == continent_selection"
@@ -29,7 +29,7 @@
       "value": 2021,
       "bind": {
         "input": "range",
-        "min": 2019,
+        "min": 1990,
         "max": 2021,
         "step": 1,
         "name": "Year:"
@@ -79,7 +79,7 @@
       "mark": "circle",
       "encoding": {
         "x": {
-          "field": "GDP per capita",
+          "field": "GDP per capita (current US$)",
           "type": "quantitative",
           "title": "GDP Per Capita (in US$)",
           "axis": {
@@ -94,7 +94,7 @@
           }
         },
         "y": {
-          "field": "School enrollment, tertiary",
+          "field": "School enrollment, tertiary (% gross)",
           "type": "quantitative",
           "title": "Tertiary Education Enrollment Rate (%)"
         },
@@ -114,7 +114,7 @@
           "value": 0.2
         },
         "size": {
-          "field": "Population",
+          "field": "Population, total",
           "type": "quantitative",
           "scale": {
             "type": "threshold",
@@ -132,18 +132,18 @@
         "tooltip": [
           { "field": "Country", "type": "nominal" },
           {
-            "field": "Population",
+            "field": "Population, total",
             "type": "quantitative",
             "format": ","
           },
           {
-            "field": "GDP per capita",
+            "field": "GDP per capita (current US$)",
             "type": "quantitative",
             "format": ",.2f",
             "title": "GDP per capita (US$)"
           },
           {
-            "field": "School enrollment, tertiary",
+            "field": "School enrollment, tertiary (% gross)",
             "type": "quantitative",
             "format": ".2f",
             "title": "Tertiary enrollment (%)"
@@ -162,7 +162,7 @@
       },
       "encoding": {
         "x": {
-          "field": "GDP per capita",
+          "field": "GDP per capita (current US$)",
           "type": "quantitative",
           "scale": {
             "type": "pow",
@@ -171,7 +171,7 @@
           }
         },
         "y": {
-          "field": "School enrollment, tertiary",
+          "field": "School enrollment, tertiary (% gross)",
           "type": "quantitative"
         },
         "text": { "field": "Country", "type": "nominal" },
@@ -186,19 +186,19 @@
         "tooltip": [
           { "field": "Country", "type": "nominal" },
           {
-            "field": "Population",
+            "field": "Population, total",
             "type": "quantitative",
             "format": ",",
             "title": "Population"
           },
           {
-            "field": "GDP per capita",
+            "field": "GDP per capita (current US$)",
             "type": "quantitative",
             "format": ",.2f",
             "title": "GDP Per Capita (US$)"
           },
           {
-            "field": "School enrollment, tertiary",
+            "field": "School enrollment, tertiary (% gross)",
             "type": "quantitative",
             "format": ".2f",
             "title": "Tertiary Enrollment (%)"
