@@ -144,3 +144,27 @@ h6 {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     margin-top: 25px;
 }
+
+.highlight-europe {
+    color: #0072B2
+}
+
+.highlight-asia {
+    color: #56B4E9
+}
+
+.highlight-oceania {
+    color: #CC79A7
+}
+
+.highlight-us {
+    color: #FF6F61
+}
+
+.highlight-uk {
+    color: #BC80BD
+}
+
+.highlight-aus {
+    color: #f19d3d
+}
