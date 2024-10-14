@@ -8,7 +8,9 @@
   },
   "data": {
     "values": [
-      {"label": "Begin", "amount": 0},
+      {"label": "Begin", "amount": 44946},
+      {"label": "2007", "amount": 6177.0},
+      {"label": "2008", "amount": 10729.0},
       {"label": "2009", "amount": 16514.0},
       {"label": "2010", "amount": 6925.0},
       {"label": "2011", "amount": -4124.0},
@@ -23,11 +25,7 @@
       {"label": "End", "amount": 0}
     ]
   },
-  "autosize": {
-    "type": "fit", 
-    "contains": "padding"
-  },
-  "width": 630,
+  "width": 850,
   "height": 470,
   "background": "transparent",
   "transform": [

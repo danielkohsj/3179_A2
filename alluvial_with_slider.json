@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.2.json",
   "height": 435,
-  "width": 615,
+  "width": 920,
   "title": {
     "text": "Where Do Students from Different Continents Pursue Tertiary Education?",
     "font": "Nunito Sans",
