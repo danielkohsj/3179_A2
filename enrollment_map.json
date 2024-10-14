@@ -7,11 +7,11 @@
   "params": [
     {
       "name": "continent_selector",
-      "value": "All Continents",
+      "value": "Show All",
       "bind": {
         "input": "select",
         "options": [
-          "All Continents",
+          "Show All",
           "Asia",
           "Africa",
           "Europe",
@@ -20,7 +20,7 @@
           "Oceania"
         ],
         "labels": [
-          "All Continents",
+          "Show All",
           "Asia",
           "Africa",
           "Europe",
@@ -28,7 +28,7 @@
           "South America",
           "Oceania"
         ],
-        "name": "Continent Selector: "
+        "name": "Continent: "
       }
     }
   ],
@@ -51,7 +51,7 @@
           }
         },
         {
-          "filter": "continent_selector == 'All Continents' || datum.Continent == continent_selector"
+          "filter": "continent_selector == 'Show All' || datum.Continent == continent_selector"
         }
       ],
       "selection": {

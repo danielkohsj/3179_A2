@@ -188,19 +188,20 @@
           {
             "field": "Population",
             "type": "quantitative",
-            "format": ","
+            "format": ",",
+            "title": "Population"
           },
           {
             "field": "GDP per capita",
             "type": "quantitative",
             "format": ",.2f",
-            "title": "GDP per capita (US$)"
+            "title": "GDP Per Capita (US$)"
           },
           {
             "field": "School enrollment, tertiary",
             "type": "quantitative",
             "format": ".2f",
-            "title": "Tertiary enrollment (%)"
+            "title": "Tertiary Enrollment (%)"
           }
         ]
       }

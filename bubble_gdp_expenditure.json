@@ -28,6 +28,9 @@
       "filter": "datum['Population, total'] != null && datum['Population, total'] > 0"
     },
     {
+      "filter": "continent_selection == 'All Continents' || datum['Continent'] == continent_selection"
+    },
+    {
       "calculate": "datum['Adjusted savings: education expenditure (current US$)'] / datum['Population, total']",
       "as": "Education Expenditure Per Capita"
     }
@@ -41,7 +44,24 @@
         "min": 1990,
         "max": 2021,
         "step": 1,
-        "name": "Year"
+        "name": "Year:"
+      }
+    },
+    {
+      "name": "continent_selection",
+      "value": "All Continents",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Show All",
+          "Asia",
+          "Africa",
+          "Europe",
+          "North America",
+          "South America",
+          "Oceania"
+        ],
+        "name": "Continent:"
       }
     }
   ],
@@ -66,7 +86,11 @@
           "type": "quantitative",
           "title": "GDP Per Capita (in US$)",
           "axis": { "labelAngle": -45 },
-          "scale": { "type": "linear", "domain": [0, 110000] }
+         "scale": {
+            "type": "pow",
+            "exponent": 0.5,
+            "domain": [0, 100000]
+          }
         },
         "y": {
           "field": "Education Expenditure Per Capita",
@@ -149,7 +173,12 @@
         "x": {
           "field": "GDP per capita (current US$)",
           "type": "quantitative",
-          "axis": {"grid": false}
+          "axis": {"grid": false},
+          "scale": {
+            "type": "pow",
+            "exponent": 0.5,
+            "domain": [0, 100000]
+          }
         },
         "y": {
           "field": "Education Expenditure Per Capita",
@@ -169,13 +198,14 @@
           {
             "field": "Population, total",
             "type": "quantitative",
-            "format": ","
+            "format": ",",
+            "title": "Population"
           },
           {
             "field": "GDP per capita (current US$)",
             "type": "quantitative",
             "format": ",.2f",
-            "title": "GDP per capita (US$)"
+            "title": "GDP Per Capita (US$)"
           },
           {
             "field": "Education Expenditure Per Capita",
@@ -187,7 +217,7 @@
             "field": "School enrollment, tertiary (% gross)",
             "type": "quantitative",
             "format": ".2f",
-            "title": "Tertiary enrollment (%)"
+            "title": "Tertiary Enrollment (%)"
           }
         ]
       }
