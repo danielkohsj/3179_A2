@@ -40,13 +40,14 @@
           "field": "Value",
           "type": "quantitative",
           "scale": {
-            "type": "linear",
+            "type": "quantize",
             "domain": [0, 120],
-            "range": ["lightyellow", "red"]
+            "range": ["#ffffb2", "#fecc5c", "#fd8d3c", "#f03b20", "#bd0026", "#800026"]
           },
           "legend": {
             "title": "Tertiary Enrollment Rate (%)",
-            "orient": "bottom"
+            "orient": "bottom",
+            "labelFormat": ".0f"
           }
         },
         "fillOpacity": {
