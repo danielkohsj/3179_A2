@@ -1,9 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.2.json",
-  "autosize": {
-    "type": "fit",
-    "contains": "padding"
-  },
   "height": 435,
   "width": 615,
   "title": {
@@ -141,6 +137,11 @@
       ]
     },
     {
+      "name": "dataForShowAll",
+      "values": [{}],
+      "transform": [{"type": "filter", "expr": "groupSelector"}]
+    },
+    {
       "name": "destinationNodes",
       "source": "nodes",
       "transform": [{"type": "filter", "expr": "datum.stack == 'stk2'"}]
@@ -205,9 +206,7 @@
       },
       "range": [
         "#E69F00", "#56B4E9", "#0072B2", "#D55E00", "#CC79A7", "#F0E442",
-        "#1f77b4", "#ff7f0e",  "#d62728", "#9467bd", "#8c564b",
-        "#e377c2", "#7f7f7f", "#bcbd22", "#17becf", "#aec7e8", "#ffbb78", "#ff9896", "#c5b0d5", "#c49c94", "#f7b6d2", "#c7c7c7",
-        "#dbdb8d"
+        "#1f77b4", "#9467bd", "#8c564b", "#ffbb78", "#17becf", "#dbdb8d"
       ]
     },
     {
@@ -294,6 +293,63 @@
           }
         }
       }
+    },
+    {
+      "type": "group",
+      "data": [
+        {
+          "name": "dataForShowAll",
+          "values": [{}],
+          "transform": [{"type": "filter", "expr": "groupSelector"}]
+        }
+      ],
+      "encode": {
+        "enter": {
+          "xc": {"signal": "width/2"},
+          "y": {"value": 30},
+          "width": {"value": 80},
+          "height": {"value": 30}
+        }
+      },
+      "marks": [
+        {
+          "type": "group",
+          "name": "groupReset",
+          "from": {"data": "dataForShowAll"},
+          "encode": {
+            "enter": {
+              "cornerRadius": {"value": 6},
+              "fill": {"value": "#f5f5f5"},
+              "stroke": {"value": "#c1c1c1"},
+              "strokeWidth": {"value": 2},
+              "height": {"field": {"group": "height"}},
+              "width": {"field": {"group": "width"}}
+            },
+            "update": {"opacity": {"value": 1}},
+            "hover": {"opacity": {"value": 1}}
+          },
+          "marks": [
+            {
+              "type": "text",
+              "interactive": false,
+              "encode": {
+                "enter": {
+                  "xc": {"field": {"group": "width"}, "mult": 0.5},
+                  "yc": {
+                    "field": {"group": "height"},
+                    "mult": 0.5,
+                    "offset": 2
+                  },
+                  "align": {"value": "center"},
+                  "baseline": {"value": "middle"},
+                  "fontWeight": {"value": "bold"},
+                  "text": {"value": "Show All"}
+                }
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "config": {
