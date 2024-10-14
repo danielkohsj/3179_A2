@@ -55,6 +55,8 @@
       </div>
     </div>
     
+
+
     <!-- Section 2: Choropleth map -->
     <div class="pure-g" id="section2">
       <div class="pure-u-1">
@@ -65,16 +67,14 @@
       <div class="pure-u-3-4">
         <div id="vis2" class="vis-container"></div>
       </div>
-      <div class="pure-u-1-4" style="line-height: 1.3;">
+      <div class="pure-u-1-4" style="line-height: 1.4;">
         <h3>Did You Know?</h3>
         <p>This map highlights global tertiary education enrolment rates. <span class="highlight-aus" style="font-weight: bold;">Australia</span> stands out with an enrolment rate of <b>112%</b>, driven by its popularity as a destination for international students. Factors like high-quality education, diverse study options, and favorable immigration policies make countries like Australia an attractive choice.
         <br><br>
         Hover over other countries to explore their enrolment rates and see how participation in higher education differs across regions.</p>
       </div>
-      
-    
-    
     </div>
+
 
 
     <!-- Section 3: Tracking the Flow of International Students -->
@@ -84,17 +84,29 @@
           <h3>Analysing the movement of students to major study destinations worldwide</h3>
       </div>
       
-      <div class="pure-u-1-2">
-          <p style="line-height: 1.3; padding-right: 50px; padding-bottom: 5px;">The <span class="highlight-us" style="font-weight: bold;">US</span> remains the <b>top destination</b> for tertiary education, while the <span class="highlight-uk" style="font-weight: bold;">UK</span> and <span class="highlight-aus" style="font-weight: bold;">Australia</span> are gaining popularity, drawing students from <span class="highlight-asia" style="font-weight: bold;">Asia</span>, <span class="highlight-europe" style="font-weight: bold;">Europe</span>, and beyond with their world-class education and diverse environments. Hover on the chart to explore more!</p>
-          <div id="vis5" class="vis-container"></div>
+      <!-- First Row: Chart (75%) on the left and Text (25%) on the right -->
+      <div class="pure-u-3-4" style="padding-bottom: 35px; padding-top: 15px;">
+        <div id="vis5" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-4" style="padding-bottom: 35px; padding-top: 15px;">
+          <h3>Fun Fact!</h3>
+          <p style="line-height: 1.4;">The <span class="highlight-us" style="font-weight: bold;">US</span> remains the <b>top destination</b> for tertiary education, attracting students from nearly all parts of the world due to its diverse range of prestigious institutions, research opportunities, and cultural exposure.
+          <br><br>
+          The <span class="highlight-uk" style="font-weight: bold;">UK</span> and <span class="highlight-aus" style="font-weight: bold;">Australia</span> are also becoming increasingly popular, particularly among students from <span class="highlight-asia" style="font-weight: bold;">Asia</span> and <span class="highlight-europe" style="font-weight: bold;">Europe</span>, owing to their world-class education systems, scholarship opportunities, and post-graduation work incentives.
+          </p>
       </div>
 
-      <div class="pure-u-1-2">
-          <p style="line-height: 1.3; padding-left: 35px;">The number of international students in <span class="highlight-asia" style="font-weight: bold;">Malaysia</span> <b>increased in 2014</b> but followed by <b>sharp declines in 2017 and 2018</b>, which may be attributed <br> to changes in government policies or rising competition from <br> other education hubs. Hover over the chart to explore more!</p>
-          <div id="vis4" class="vis-container" style="padding-left: 30px;"></div>
+      <!-- Second Row: Text (25%) on the left and Chart (75%) on the right -->
+      <div class="pure-u-1-4" style="padding-top: 8px;">
+          <h3>Have You Noticed?</h3>
+          <p style="line-height: 1.4;">The number of international students in <span class="highlight-asia" style="font-weight: bold;">Malaysia</span> saw <b>consistent growth</b> from <b>2007 to 2010</b>, and from <b>2013 to 2016</b>. This steady increase was driven by <span class="highlight-asia" style="font-weight: bold;">Malaysia's</span> growing reputation as a cost-effective and accessible destination for tertiary education, especially among students from neighboring regions. 
+          <br><br>  
+          However, the <b>sharp declines</b> in <b>2017 and 2018</b> saw a drop of over 43,000 students, likely due to changes in government policies, competition from other education hubs, and global economic factors. 
+      </div>
+      <div class="pure-u-3-4" style="padding-top: 8px;">
+          <div id="vis4" class="vis-container" style="padding-left: 60px;"></div>
       </div>
     </div>
-
 
 
 
@@ -105,15 +117,17 @@
             <h3>Analysing how economic policies correlate with tertiary enrollment rates</h3>
         </div>
         <div class="pure-u-1-2">
-          <p style="line-height: 1.3; padding-right: 50px;">Countries with <b>higher GDP per capita</b> usually have <b>higher tertiary education enrollment</b>. However, nations like <span class="highlight-aus" style="font-weight: bold;">Australia</span> and <span class="highlight-europe" style="font-weight: bold;">Greece</span> stand out by enrolling more students than their populations, reflecting their role as education hubs. Hover on the chart to explore further!</p>
+          <p style="line-height: 1.4; padding-right: 50px;">Countries with <b>higher GDP per capita</b> usually have <b>higher tertiary education enrollment</b>. However, nations like <span class="highlight-aus" style="font-weight: bold;">Australia</span> and <span class="highlight-europe" style="font-weight: bold;">Greece</span> stand out by enrolling more students than their populations, reflecting their role as education hubs.
           <div id="vis6" class="vis-container"></div>
         </div>
 
         <div class="pure-u-1-2">
-          <p style="line-height: 1.3; padding-left: 35px;"><b>Wealthier countries</b>, such as those in <span class="highlight-europe" style="font-weight: bold;">Scandinavia</span>, generally <b>spend more on education per person</b> and tend to have <b>higher tertiary enrollment rates</b>. This suggests that increased investment in education often correlates with more people pursuing higher education. Hover on the chart to explore more!</p>
+          <p style="line-height: 1.4; padding-left: 35px;"><b>Wealthier countries</b>, such as <span class="highlight-europe" style="font-weight: bold;">Norway</span>, generally <b>spend more on education per person</b> and tend to have <b>higher tertiary enrollment rates</b>. This suggests that increased investment in education often correlates with more people pursuing higher education.</p>
           <div id="vis3" class="vis-container" style="padding-left: 30px;"></div>
         </div>
     </div>
+
+
 
     <!-- Footer -->
     <div class="pure-g">

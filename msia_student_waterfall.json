@@ -4,7 +4,7 @@
     "text": "How Has the Number of International Students in Malaysia Changed?",
     "font": "Nunito Sans",
     "anchor": "start",
-    "fontSize": 17
+    "fontSize": 19
   },
   "data": {
     "values": [
@@ -26,7 +26,7 @@
     ]
   },
   "width": 850,
-  "height": 470,
+  "height": 450,
   "background": "transparent",
   "transform": [
     {"window": [{"op": "sum", "field": "amount", "as": "sum"}]},
@@ -136,7 +136,7 @@
               "value": "#725a30"
             }
           ],
-          "value": "white"
+          "value": "darkblue"
         }
       }
     }
