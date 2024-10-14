@@ -6,27 +6,72 @@ body, html {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1 {
     font-weight: 665;
-    text-align: center;
-    background-color: #f0f0f0;
-    padding: 20px 5px 20px 5px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    width: 100%;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 0px;
     font-family: 'Merriweather', serif;
     font-size: 38px;
+    margin-bottom: 10px; /* Space between title and buttons */
+}
+
+.section-buttons {
+    position: sticky; /* Make the buttons sticky */
+    top: 0; /* Stick the buttons to the top of the viewport */
+    background-color: #f0eae1; /* Same background as the main box */
+    padding: 10px 0; /* Padding for the buttons */
+    z-index: 1000; /* Ensure buttons stay above other content */
+    display: inline-block;
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    /* border-top: 2px solid #ccc; Optional: to visually separate the sticky buttons */
+}
+
+.pure-button {
+    background-color: transparent; /* Transparent background */
+    color: black; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 0 10px; /* Space out the buttons */
+    position: relative;
+}
+
+
+.pure-button:hover {
+    background-color: rgba(235, 243, 210, 0.1)
+}
+
+.pure-button:not(:last-child)::after {
+    content: '|'; /* Adds a divider between buttons */
+    color: #ccc; /* Divider color */
+    margin-left: 15px; /* Space between button and divider */
+    margin-right: 15px; /* Space after the divider */
+    font-size: 18px; /* Adjust divider size */
+    position: absolute;
+    right: -25px; /* Adjust position of the divider */
+}
+
+.pure-button:first-child {
+    margin-left: 20px; /* Add spacing for the first button */
+}
+
+.pure-button:last-child {
+    margin-right: 20px; /* Add spacing for the last button */
 }
 
 body {
-    background-color: rgb(231, 247, 244);
+    background-color: #f2efeb;
 }
 
 .page {
     max-width: 1305px;
-    background-color: rgb(231, 247, 244);
+    background-color: #f2efeb;
     margin: auto;
     padding-left: 45px;
     padding-right: 45px;
@@ -86,4 +131,15 @@ h6 {
 .footer-font {
     font-size: 10px;
     margin-bottom: 0px;
+}
+
+.pure-u-1-1 {
+    text-align: center;
+    background-color: #f0eae1;
+    padding: 4px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
 }
