@@ -1,197 +1,193 @@
-Country Name,Value
-Afghanistan,51.39184835
-Angola,51.39184835
-Albania,60.31758118
-Andorra,15.20427036
-United Arab Emirates,51.39184835
-Argentina,107.130661
-Armenia,58.75630951
-Australia,112.6882935
-Austria,93.94007111
-Azerbaijan,38.86608124
-Burundi,6.287000179
-Belgium,82.6882019
-Benin,10.23151016
-Burkina Faso,9.36093998
-Bangladesh,23.39999962
-Bulgaria,74.02764893
-Bahrain,70.76303101
-Bosnia & Herzegovina,43.57767868
-Belarus,73.95913696
-Belize,23.51840019
-Bolivia,51.39184835
-Brazil,56.83061981
-Barbados,51.39184835
-Brunei,51.39184835
-Bhutan,17.70599937
-Botswana,22.90464973
-Central African Rep.,51.39184835
-Canada,77.80229187
-Switzerland,71.89392853
-Chile,96.22279358
-China,67.38761902
-Cameroon,51.39184835
-Colombia,58.31592178
-Comoros,51.39184835
-Cabo Verde,51.39184835
-Costa Rica,51.39184835
-Cuba,51.07854843
-Cyprus,96.53778839
-Germany,75.6655426
-Djibouti,51.39184835
-Dominica,51.39184835
-Denmark,83.98229218
-Dominican Rep.,58.62807846
-Algeria,54.20999146
-Ecuador,51.39184835
-Eritrea,51.39184835
-Spain,94.59037781
-Estonia,73.15020752
-Ethiopia,51.39184835
-Finland,100.8680725
-Fiji,51.39184835
-France,68.97485352
-Gabon,51.39184835
-United Kingdom,77.01316071
-Georgia,76.82131195
-Ghana,19.18631935
-Guinea,6.718999863
-Guinea-Bissau,51.39184835
-Equatorial Guinea,51.39184835
-Greece,150.201767
-Grenada,51.39184835
-Guatemala,51.39184835
-Guyana,51.39184835
-Honduras,51.39184835
-Croatia,72.33335876
-Haiti,51.39184835
-Hungary,56.52434921
-Indonesia,41.0019989
-India,31.5739994
-Ireland,78.77760315
-Iraq,51.39184835
-Iceland,86.52320862
-Israel,58.99428177
-Italy,71.287117
-Jamaica,51.39184835
-Jordan,33.49145126
-Japan,63.17026901
-Kazakhstan,51.39184835
-Kenya,19.98500061
-Cambodia,13.8760004
-Kiribati,51.39184835
-Kuwait,61.55804825
-Lebanon,58.44414139
-Liberia,51.39184835
-Libya,51.39184835
-Sri Lanka,21.36300087
-Lesotho,51.39184835
-Lithuania,71.90931702
-Luxembourg,20.73414993
-Latvia,93.4839325
-Morocco,42.82289124
-Monaco,51.39184835
-Moldova,61.30234146
-Madagascar,5.581999779
-Maldives,51.39184835
-Mexico,45.65061951
-Marshall Is.,51.39184835
-Macedonia,40.54917145
-Mali,51.39184835
-Malta,73.02269745
-Myanmar,51.39184835
-Montenegro,56.82814026
-Mongolia,64.45899963
-Mozambique,51.39184835
-Mauritania,51.39184835
-Mauritius,43.95907974
-Malawi,2.411000013
-Malaysia,40.91400146
-Namibia,51.39184835
-Niger,51.39184835
-Nigeria,51.39184835
-Nicaragua,19.89999962
-Netherlands,88.95426178
-Norway,93.92430115
-Nepal,14.38399982
-Nauru,51.39184835
-New Zealand,79.41288757
-Oman,43.8433609
-Pakistan,12.59799957
-Panama,53.04459
-Peru,51.39184835
-Philippines,34.89099884
-Palau,51.39184835
-Papua New Guinea,51.39184835
-Poland,70.9335022
-Portugal,71.8742981
-Paraguay,51.39184835
-Qatar,31.28140068
-Romania,55.26560974
-Rwanda,6.997000217
-Saudi Arabia,74.39248657
-Sudan,51.39184835
-Senegal,15.73433018
-Singapore,97.09890747
-Solomon Is.,51.39184835
-Sierra Leone,51.39184835
-El Salvador,51.39184835
-San Marino,56.70391083
-Somalia,51.39184835
-Serbia,69.29070282
-South Sudan,51.39184835
-Sao Tome and Principe,51.39184835
-Suriname,8.801739693
-Slovenia,82.24004364
-Sweden,85.94261932
-Eswatini,51.39184835
-Seychelles,15.47105026
-Chad,51.39184835
-Togo,51.39184835
-Thailand,49.66899872
-Tajikistan,51.39184835
-Turkmenistan,16.41584015
-Timor-Leste,51.39184835
-Tonga,51.39184835
-Trinidad and Tobago,51.39184835
-Tunisia,33.8982811
-Tuvalu,51.39184835
-Tanzania,3.707999945
-Uganda,51.39184835
-Ukraine,75.90794373
-Uruguay,75.17138672
-United States of America,84.85508728
-Uzbekistan,21.79199982
-Vanuatu,51.39184835
-Samoa,17.5720005
-South Africa,25.35660934
-Zambia,51.39184835
-Zimbabwe,51.39184835
-Russia,65.873292
-Syria,57.126041
-Yemen,57.126041
-Somaliland,57.126041
-Dem. Rep. Congo,57.126041
-Gambia,57.126041
-North Korea,57.126041
-South Korea,57.126041
-Cote d'Ivoire,57.126041
-West Bank and Gaza,57.126041
-Egypt,57.126041
-Vietnam,57.126041
-Iran,57.126041
-Kosovo,57.126041
-Bosnia and Herz.,57.126041
-Saint Vincent and the Grenadines,57.126041
-Turkey,57.126041
-Saint Lucia,57.126041
-Venezuela,57.126041
-Antigua and Barbuda,57.126041
-Saint Kitts and Nevis,57.126041
-Slovakia,57.126041
-Czechia,57.126041
-Taiwan,57.126041
-Bahamas,57.126041
-Puerto Rico,57.126041
-Greenland,57.126041
-Liechtenstein,57.126041
+Country Name,Value,Continent
+Afghanistan,51.39184835,Asia
+Angola,51.39184835,Africa
+Albania,60.31758118,Europe
+Andorra,15.20427036,Europe
+United Arab Emirates,51.39184835,Asia
+Argentina,107.130661,South America
+Armenia,58.75630951,Asia
+Australia,112.6882935,Oceania
+Austria,93.94007111,Europe
+Azerbaijan,38.86608124,Asia
+Burundi,6.287000179,Africa
+Belgium,82.6882019,Europe
+Benin,10.23151016,Africa
+Burkina Faso,9.36093998,Africa
+Bangladesh,23.39999962,Asia
+Bulgaria,74.02764893,Europe
+Bahrain,70.76303101,Asia
+Bosnia & Herzegovina,43.57767868,Europe
+Belarus,73.95913696,Europe
+Belize,23.51840019,North America
+Bolivia,51.39184835,South America
+Brazil,56.83061981,South America
+Barbados,51.39184835,North America
+Brunei,51.39184835,Asia
+Bhutan,17.70599937,Asia
+Botswana,22.90464973,Africa
+Central African Republic,51.39184835,Africa
+Canada,77.80229187,North America
+Switzerland,71.89392853,Europe
+Chile,96.22279358,South America
+China,67.38761902,Asia
+Cameroon,51.39184835,Africa
+Colombia,58.31592178,South America
+Comoros,51.39184835,Africa
+Cabo Verde,51.39184835,Africa
+Costa Rica,51.39184835,North America
+Cuba,51.07854843,North America
+Cyprus,96.53778839,Europe
+Germany,75.6655426,Europe
+Djibouti,51.39184835,Africa
+Dominica,51.39184835,North America
+Denmark,83.98229218,Europe
+Dominican Rep.,58.62807846,North America
+Algeria,54.20999146,Africa
+Ecuador,51.39184835,South America
+Eritrea,51.39184835,Africa
+Spain,94.59037781,Europe
+Estonia,73.15020752,Europe
+Ethiopia,51.39184835,Africa
+Finland,100.8680725,Europe
+Fiji,51.39184835,Oceania
+France,68.97485352,Europe
+Gabon,51.39184835,Africa
+United Kingdom,77.01316071,Europe
+Georgia,76.82131195,Asia
+Ghana,19.18631935,Africa
+Guinea,6.718999863,Africa
+Guinea-Bissau,51.39184835,Africa
+Equatorial Guinea,51.39184835,Africa
+Greece,150.201767,Europe
+Grenada,51.39184835,North America
+Guatemala,51.39184835,North America
+Guyana,51.39184835,South America
+Honduras,51.39184835,North America
+Croatia,72.33335876,Europe
+Haiti,51.39184835,North America
+Hungary,56.52434921,Europe
+Indonesia,41.0019989,Asia
+India,31.5739994,Asia
+Ireland,78.77760315,Europe
+Iraq,51.39184835,Asia
+Iceland,86.52320862,Europe
+Israel,58.99428177,Asia
+Italy,71.287117,Europe
+Jamaica,51.39184835,North America
+Jordan,33.49145126,Asia
+Japan,63.17026901,Asia
+Kazakhstan,51.39184835,Asia
+Kenya,19.98500061,Africa
+Cambodia,13.8760004,Asia
+Kiribati,51.39184835,Oceania
+Kuwait,61.55804825,Asia
+Lebanon,58.44414139,Asia
+Liberia,51.39184835,Africa
+Libya,51.39184835,Africa
+Sri Lanka,21.36300087,Asia
+Lesotho,51.39184835,Africa
+Lithuania,71.90931702,Europe
+Luxembourg,20.73414993,Europe
+Latvia,93.4839325,Europe
+Morocco,42.82289124,Africa
+Monaco,51.39184835,Europe
+Moldova,61.30234146,Europe
+Madagascar,5.581999779,Africa
+Maldives,51.39184835,Asia
+Mexico,45.65061951,North America
+Macedonia,40.54917145,Europe
+Mali,51.39184835,Africa
+Malta,73.02269745,Europe
+Myanmar,51.39184835,Asia
+Montenegro,56.82814026,Europe
+Mongolia,64.45899963,Asia
+Mozambique,51.39184835,Africa
+Mauritania,51.39184835,Africa
+Mauritius,43.95907974,Africa
+Malawi,2.411000013,Africa
+Malaysia,40.91400146,Asia
+Namibia,51.39184835,Africa
+Niger,51.39184835,Africa
+Nigeria,51.39184835,Africa
+Nicaragua,19.89999962,North America
+Netherlands,88.95426178,Europe
+Norway,93.92430115,Europe
+Nepal,14.38399982,Asia
+Nauru,51.39184835,Oceania
+New Zealand,79.41288757,Oceania
+Oman,43.8433609,Asia
+Pakistan,12.59799957,Asia
+Panama,53.04459,North America
+Peru,51.39184835,South America
+Philippines,34.89099884,Asia
+Palau,51.39184835,Oceania
+Papua New Guinea,51.39184835,Oceania
+Poland,70.9335022,Europe
+Portugal,71.8742981,Europe
+Paraguay,51.39184835,South America
+Qatar,31.28140068,Asia
+Romania,55.26560974,Europe
+Rwanda,6.997000217,Africa
+Saudi Arabia,74.39248657,Asia
+Sudan,51.39184835,Africa
+Senegal,15.73433018,Africa
+Singapore,97.09890747,Asia
+Sierra Leone,51.39184835,Africa
+El Salvador,51.39184835,North America
+San Marino,56.70391083,Europe
+Somalia,51.39184835,Africa
+Serbia,69.29070282,Europe
+South Sudan,51.39184835,Africa
+Sao Tome and Principe,51.39184835,Africa
+Suriname,8.801739693,South America
+Slovenia,82.24004364,Europe
+Sweden,85.94261932,Europe
+Eswatini,51.39184835,Africa
+Seychelles,15.47105026,Africa
+Chad,51.39184835,Africa
+Togo,51.39184835,Africa
+Thailand,49.66899872,Asia
+Tajikistan,51.39184835,Asia
+Turkmenistan,16.41584015,Asia
+Timor-Leste,51.39184835,Asia
+Tonga,51.39184835,Oceania
+Trinidad and Tobago,51.39184835,North America
+Tunisia,33.8982811,Africa
+Tuvalu,51.39184835,Oceania
+Tanzania,3.707999945,Africa
+Uganda,51.39184835,Africa
+Ukraine,75.90794373,Europe
+Uruguay,75.17138672,South America
+United States of America,84.85508728,North America
+Uzbekistan,21.79199982,Asia
+Vanuatu,51.39184835,Oceania
+Samoa,17.5720005,Oceania
+South Africa,25.35660934,Africa
+Zambia,51.39184835,Africa
+Zimbabwe,51.39184835,Africa
+Russia,65.873292,Europe
+Syria,57.126041,Asia
+Yemen,57.126041,Asia
+Somaliland,57.126041,Africa
+Dem. Rep. Congo,57.126041,Africa
+Gambia,57.126041,Africa
+North Korea,57.126041,Asia
+South Korea,57.126041,Asia
+Cote d'Ivoire,57.126041,Africa
+West Bank and Gaza,57.126041,Asia
+Egypt,57.126041,Africa
+Vietnam,57.126041,Asia
+Iran,57.126041,Asia
+Kosovo,57.126041,Europe
+Bosnia and Herz.,57.126041,Europe
+Saint Vincent and the Grenadines,57.126041,North America
+Turkey,57.126041,Asia
+Saint Lucia,57.126041,North America
+Venezuela,57.126041,South America
+Antigua and Barbuda,57.126041,North America
+Saint Kitts and Nevis,57.126041,North America
+Slovakia,57.126041,Europe
+Czechia,57.126041,Europe
+Taiwan,80.12%,Asia
+Bahamas,57.126041,North America
+Liechtenstein,90.56%,Europe
