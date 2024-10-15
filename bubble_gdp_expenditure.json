@@ -119,7 +119,7 @@
         "color": {
           "field": "School enrollment, tertiary (% gross)",
           "type": "quantitative",
-          "title": "Tertiary Enrollment (%)",
+          "title": "Tertiary Enrolment (%)",
           "scale": {
             "type": "quantize",
             "domain": [0, 120],
@@ -157,7 +157,7 @@
             "field": "School enrollment, tertiary (% gross)",
             "type": "quantitative",
             "format": ".2f",
-            "title": "Tertiary Enrollment (%)"
+            "title": "Tertiary Enrolment (%)"
           }
         ]
       }
@@ -219,7 +219,7 @@
             "field": "School enrollment, tertiary (% gross)",
             "type": "quantitative",
             "format": ".2f",
-            "title": "Tertiary Enrollment (%)"
+            "title": "Tertiary Enrolment (%)"
           }
         ]
       }

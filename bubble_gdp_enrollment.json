@@ -4,7 +4,7 @@
   "height": 400,
   "background": "transparent",
   "title": {
-    "text": "How Does a Country's Wealth Impact Tertiary Education Enrollment?",
+    "text": "How Does a Country's Wealth Impact Tertiary Education Enrolment?",
     "font": "Nunito Sans",
     "fontSize": 19,
     "anchor": "start"
@@ -96,7 +96,7 @@
         "y": {
           "field": "School enrollment, tertiary (% gross)",
           "type": "quantitative",
-          "title": "Tertiary Education Enrollment Rate (%)"
+          "title": "Tertiary Education Enrolment Rate (%)"
         },
         "color": {
           "field": "Continent",
@@ -147,7 +147,7 @@
             "field": "School enrollment, tertiary (% gross)",
             "type": "quantitative",
             "format": ".2f",
-            "title": "Tertiary Enrollment (%)"
+            "title": "Tertiary Enrolment (%)"
           }
         ]
       }
@@ -202,7 +202,7 @@
             "field": "School enrollment, tertiary (% gross)",
             "type": "quantitative",
             "format": ".2f",
-            "title": "Tertiary Enrollment (%)"
+            "title": "Tertiary Enrolment (%)"
           }
         ]
       }
