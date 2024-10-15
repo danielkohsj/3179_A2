@@ -76,7 +76,7 @@
             "range": ["#ffffb2", "#fecc5c", "#fd8d3c", "#f03b20", "#bd0026", "#800026"]
           },
           "legend": {
-            "title": "Tertiary Enrollment Rate (%)",
+            "title": "Tertiary Enrollment (%)",
             "orient": "bottom",
             "labelFormat": ".0f"
           }

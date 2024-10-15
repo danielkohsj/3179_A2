@@ -86,7 +86,7 @@
           "type": "quantitative",
           "title": "GDP Per Capita (in US$)",
           "axis": { "labelAngle": -45 },
-         "scale": {
+          "scale": {
             "type": "pow",
             "exponent": 0.5,
             "domain": [0, 100000]
@@ -121,8 +121,9 @@
           "type": "quantitative",
           "title": "Tertiary Enrollment (%)",
           "scale": {
-            "type": "linear",
-            "range": ["#ffcccc", "#800000"]
+            "type": "quantize",
+            "domain": [0, 120],
+            "range": ["#ffffb2", "#fecc5c", "#fd8d3c", "#f03b20", "#bd0026", "#800026"]
           }
         },
         "opacity": {
