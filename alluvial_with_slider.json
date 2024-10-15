@@ -198,16 +198,8 @@
     {
       "name": "color",
       "type": "ordinal",
-      "domain": {
-        "fields": [
-          ["Africa", "Asia", "Europe", "North America", "Oceania", "South America"],
-          {"data": "groups", "field": "grpId", "filter": "datum.stack == 'stk2'"}
-        ]
-      },
-      "range": [
-        "#E69F00", "#56B4E9", "#0072B2", "#D55E00", "#CC79A7", "#F0E442",
-        "#FF6F61", "#6B5B95", "#FDB462", "#BC80BD", "#8DD3C7", "#C0C0C0"
-      ]
+      "domain": ["Africa", "Asia", "Europe", "North America", "Oceania", "South America", "Australia", "Canada", "France", "Germany", "United Kingdom", "United States"],
+      "range": ["#E69F00", "#56B4E9", "#0072B2", "#D55E00", "#CC79A7", "#F0E442", "#FF6F61", "#6B5B95", "#FDB462", "#BC80BD", "#73706f", "#C0C0C0"]
     },
     {
       "name": "stackNames",
