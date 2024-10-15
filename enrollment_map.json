@@ -73,7 +73,7 @@
           "scale": {
             "type": "quantize",
             "domain": [0, 120],
-            "range": ["#ffffb2", "#fecc5c", "#fd8d3c", "#f03b20", "#bd0026", "#800026"]
+            "range": ["#ffcccc", "#f7a3a3", "#ef7a7a", "#e75252", "#df2929", "#800000"]
           },
           "legend": {
             "title": "Tertiary Enrollment (%)",
