@@ -198,7 +198,7 @@
     {
       "name": "color",
       "type": "ordinal",
-      "domain": ["Africa", "Asia", "Europe", "North America", "Oceania", "South America", "Australia", "Canada", "France", "Germany", "United Kingdom", "United States"],
+      "domain": ["Africa", "Asia", "Europe", "North America", "Oceania", "South America", "France", "Canada", "Australia", "United Kingdom", "Germany", "United States"],
       "range": ["#E69F00", "#56B4E9", "#0072B2", "#D55E00", "#CC79A7", "#F0E442", "#FF6F61", "#6B5B95", "#FDB462", "#BC80BD", "#73706f", "#C0C0C0"]
     },
     {
