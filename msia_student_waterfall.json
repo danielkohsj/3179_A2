@@ -63,7 +63,7 @@
     },
     "tooltip": [
       {"field": "label", "type": "ordinal", "title": "Year"},
-      {"field": "amount", "type": "quantitative", "title": "Change in Students"}
+      {"field": "amount", "type": "quantitative", "title": "Change in Students", "format": ",.0f"}
     ]
   },
   "layer": [
@@ -128,7 +128,7 @@
       },
       "encoding": {
         "y": {"field": "center", "type": "quantitative"},
-        "text": {"field": "text_amount", "type": "nominal"},
+        "text": {"field": "text_amount", "type": "nominal", "format": ",.0f"},
         "color": {
           "condition": [
             {
