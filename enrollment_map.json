@@ -182,7 +182,8 @@
             "type": "text",
             "align": "left",
             "dx": 5,
-            "dy": -5
+            "dy": -5,
+            "fontStyle": "italic"
           },
           "encoding": {
             "longitude": {"field": "textLon", "type": "quantitative"},
