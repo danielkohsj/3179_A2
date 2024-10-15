@@ -4,26 +4,26 @@ Canada,Africa,2013,14598
 Australia,Oceania,2013,5117
 Australia,Africa,2013,7243
 United Kingdom,Oceania,2013,2463
-Germany,Northern America,2013,4690
-France,Northern America,2013,4552
+Germany,North America,2013,4690
+France,North America,2013,4552
 Canada,Europe,2013,18686
 Australia,Europe,2013,10837
-Australia,Northern America,2013,6528
+Australia,North America,2013,6528
 United States,Europe,2013,62541.471
-United States,Northern America,2013,29536.189
+United States,North America,2013,29536.189
 United States,Africa,2013,37427.815
 United Kingdom,Africa,2013,33979
 France,Oceania,2013,365
-Canada,Northern America,2013,8403
-Germany,Northern America,2014,6772
-France,Northern America,2014,4578
-Australia,Northern America,2014,6404
+Canada,North America,2013,8403
+Germany,North America,2014,6772
+France,North America,2014,4578
+Australia,North America,2014,6404
 Australia,Europe,2014,10523
 France,Europe,2014,47605
 France,Africa,2014,95759
 Canada,Oceania,2014,837
 Australia,South America,2014,5548
-Canada,Northern America,2014,8547
+Canada,North America,2014,8547
 United States,Asia,2014,623542.348
 United States,Oceania,2014,5574.177
 United Kingdom,South America,2014,9164
@@ -48,9 +48,9 @@ Canada,Africa,2015,18309
 Australia,Oceania,2015,4842
 Australia,Africa,2015,7306
 United Kingdom,Oceania,2015,2492
-Germany,Northern America,2015,5812
-France,Northern America,2015,4887
-Australia,Northern America,2015,6385
+Germany,North America,2015,5812
+France,North America,2015,4887
+Australia,North America,2015,6385
 Australia,Europe,2015,11395
 Canada,Europe,2016,25311
 Canada,South America,2016,9714
@@ -61,10 +61,10 @@ France,South America,2016,15682
 Canada,Asia,2016,115608
 Australia,Asia,2016,291860
 United Kingdom,Oceania,2016,2609
-Germany,Northern America,2016,6402
-France,Northern America,2016,4961
+Germany,North America,2016,6402
+France,North America,2016,4961
 Australia,Europe,2016,14160
-Australia,Northern America,2016,6978
+Australia,North America,2016,6978
 France,Europe,2016,50202
 France,Africa,2016,102941
 Canada,Oceania,2016,845
@@ -76,7 +76,7 @@ France,South America,2017,16308
 Canada,Asia,2017,135091
 Australia,Asia,2017,326665
 United States,South America,2017,77955.437
-United Kingdom,Northern America,2017,22508
+United Kingdom,North America,2017,22508
 Germany,Europe,2017,100367
 France,Asia,2017,56134
 France,Europe,2017,52886
@@ -88,7 +88,7 @@ Canada,Europe,2017,26022
 Canada,South America,2017,12273
 France,Oceania,2019,258
 Australia,Africa,2019,10971
-Canada,Northern America,2019,9504
+Canada,North America,2019,9504
 Germany,South America,2019,16678
 Germany,Oceania,2019,1532
 Germany,Africa,2019,31028
@@ -96,12 +96,12 @@ France,South America,2019,15406
 Canada,Asia,2019,194274
 Australia,Asia,2019,439706
 United States,South America,2019,79514.837
-United Kingdom,Northern America,2019,26583
+United Kingdom,North America,2019,26583
 Germany,Europe,2019,122139
 France,Asia,2019,54402
 Germany,Europe,2018,121136
 France,Asia,2018,51074
-United States,Northern America,2018,26880.344
+United States,North America,2018,26880.344
 United States,Europe,2018,67526.417
 United States,Africa,2018,47689.122
 United Kingdom,Africa,2018,27741
@@ -120,18 +120,18 @@ Germany,Asia,2021,159183
 Canada,Africa,2021,32157
 Australia,Oceania,2021,2922
 United Kingdom,Oceania,2021,2602
-Germany,Northern America,2021,8240
-France,Northern America,2021,3891
+Germany,North America,2021,8240
+France,North America,2021,3891
 Australia,Europe,2021,12389
-Australia,Northern America,2021,4813
+Australia,North America,2021,4813
 United States,Europe,2021,57171.014
-United States,Northern America,2021,26324.132
+United States,North America,2021,26324.132
 United States,Africa,2021,45044.671
 United Kingdom,Africa,2021,43123
 France,Oceania,2021,436
 Australia,Africa,2021,8819
-Canada,Northern America,2021,9105
-Canada,Northern America,2020,9669
+Canada,North America,2021,9105
+Canada,North America,2020,9669
 United States,Asia,2020,730158.873
 United States,Oceania,2020,7056.539
 United Kingdom,South America,2020,10041
@@ -140,11 +140,11 @@ Germany,Asia,2020,152576
 Canada,Africa,2020,30069
 Australia,Oceania,2020,3535
 United States,South America,2020,78807.792
-United Kingdom,Northern America,2020,27089
+United Kingdom,North America,2020,27089
 Germany,Europe,2020,120766
 France,Asia,2020,57471
 United States,Europe,2020,66373.338
-United States,Northern America,2020,26796.443
+United States,North America,2020,26796.443
 United States,Africa,2020,48274.832
 United Kingdom,Africa,2020,33157
 France,Oceania,2020,245
@@ -156,7 +156,7 @@ France,South America,2013,13686
 Canada,Asia,2013,88491
 Australia,Asia,2013,212984
 United States,South America,2013,65790.367
-United Kingdom,Northern America,2013,21262
+United Kingdom,North America,2013,21262
 Germany,Europe,2013,85786
 France,Asia,2013,53086
 France,Europe,2013,45947
@@ -170,10 +170,10 @@ United States,Asia,2013,571366.946
 United Kingdom,Europe,2013,127627
 United Kingdom,South America,2013,8199
 United States,South America,2014,69371.241
-United Kingdom,Northern America,2014,21696
+United Kingdom,North America,2014,21696
 Germany,Europe,2014,106312
 France,Asia,2014,53468
-United States,Northern America,2014,30307.462
+United States,North America,2014,30307.462
 United States,Europe,2014,62525.189
 United States,Africa,2014,38080.114
 United Kingdom,Africa,2014,34919
@@ -190,10 +190,10 @@ Australia,Asia,2014,229626
 United Kingdom,Oceania,2014,2552
 United States,Europe,2015,66493.774
 United States,Africa,2015,40990.263
-United States,Northern America,2015,28921.913
+United States,North America,2015,28921.913
 United Kingdom,Africa,2015,34924
 France,Oceania,2015,471
-Canada,Northern America,2015,8316
+Canada,North America,2015,8316
 Germany,South America,2015,12401
 Germany,Oceania,2015,885
 Germany,Africa,2015,19063
@@ -201,7 +201,7 @@ France,South America,2015,15172
 Canada,Asia,2015,103689
 Australia,Asia,2015,255940
 United States,South America,2015,74976.28
-United Kingdom,Northern America,2015,21805
+United Kingdom,North America,2015,21805
 Germany,Europe,2015,95275
 France,Asia,2015,54512
 United States,Oceania,2017,6633.622
@@ -213,17 +213,17 @@ Canada,Africa,2017,22845
 Australia,Oceania,2017,5272
 Australia,Africa,2017,9749
 United Kingdom,Oceania,2017,2636
-Germany,Northern America,2017,7228
-France,Northern America,2017,5343
+Germany,North America,2017,7228
+France,North America,2017,5343
 Australia,Europe,2017,14958
-Australia,Northern America,2017,5598
+Australia,North America,2017,5598
 United States,Europe,2017,68269.303
-United States,Northern America,2017,28169.4
+United States,North America,2017,28169.4
 United States,Africa,2017,46012.704
 United Kingdom,Africa,2017,29900
 France,Oceania,2017,662
-Canada,Northern America,2017,9135
-Canada,Northern America,2016,8688
+Canada,North America,2017,9135
+Canada,North America,2016,8688
 United States,Asia,2016,744539.88
 United States,Oceania,2016,6316.24
 United Kingdom,Europe,2016,141263
@@ -233,11 +233,11 @@ Canada,Africa,2016,20916
 Australia,Oceania,2016,4946
 Australia,Africa,2016,8296
 United States,South America,2016,80129.236
-United Kingdom,Northern America,2016,22013
+United Kingdom,North America,2016,22013
 Germany,Europe,2016,98443
 France,Asia,2016,52518
 United States,Europe,2016,67874.107
-United States,Northern America,2016,28618.728
+United States,North America,2016,28618.728
 United States,Africa,2016,43936.446
 United Kingdom,Africa,2016,33444
 France,Oceania,2016,431
@@ -257,13 +257,13 @@ Germany,Asia,2019,127962
 Canada,Africa,2019,25848
 Australia,Oceania,2019,3950
 United Kingdom,Oceania,2019,2804
-Germany,Northern America,2019,9796
-France,Northern America,2019,4622
+Germany,North America,2019,9796
+France,North America,2019,4622
 Australia,Europe,2019,16014
-Australia,Northern America,2019,6446
+Australia,North America,2019,6446
 United States,Europe,2019,66936.593
 United States,Africa,2019,47864.098
-United States,Northern America,2019,26888.955
+United States,North America,2019,26888.955
 United Kingdom,Africa,2019,29302
 United Kingdom,Asia,2020,325545
 Canada,Europe,2020,28890
@@ -275,10 +275,10 @@ France,South America,2020,15608
 Canada,Asia,2020,230349
 Australia,Asia,2020,391691
 United Kingdom,Oceania,2020,2818
-Germany,Northern America,2020,9657
-France,Northern America,2020,4584
+Germany,North America,2020,9657
+France,North America,2020,4584
 Australia,Europe,2020,14382
-Australia,Northern America,2020,5696
+Australia,North America,2020,5696
 France,Europe,2020,39873
 France,Africa,2020,126331
 Canada,Oceania,2020,714
@@ -290,7 +290,7 @@ France,South America,2021,15546
 Canada,Asia,2021,229533
 Australia,Asia,2021,316339
 United States,South America,2021,72537.126
-United Kingdom,Northern America,2021,26355
+United Kingdom,North America,2021,26355
 Germany,Europe,2021,120128
 France,Asia,2021,55811
 France,Europe,2021,39527
@@ -305,15 +305,15 @@ United States,Asia,2021,625972.507
 United Kingdom,Europe,2021,157657
 United Kingdom,South America,2021,8880
 United Kingdom,Oceania,2018,2640
-Germany,Northern America,2018,9510
-France,Northern America,2018,4354
-Australia,Northern America,2018,5899
+Germany,North America,2018,9510
+France,North America,2018,4354
+Australia,North America,2018,5899
 Australia,Europe,2018,15285
 France,Europe,2018,39464
 France,Africa,2018,114401
 Canada,Oceania,2018,847.658
 Australia,South America,2018,16459
-Canada,Northern America,2018,9770.577
+Canada,North America,2018,9770.577
 United States,Asia,2018,759362.514
 United States,Oceania,2018,6976.839
 United Kingdom,South America,2018,10238
@@ -322,4 +322,4 @@ Germany,Asia,2018,113074
 Canada,Africa,2018,24412.495
 Australia,Oceania,2018,3480
 United States,South America,2018,78871.434
-United Kingdom,Northern America,2018,24234
+United Kingdom,North America,2018,24234
