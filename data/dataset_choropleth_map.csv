@@ -1,6 +1,6 @@
 Country Name,Value,Continent
-Afghanistan,51.39184835,Asia
-Angola,51.39184835,Africa
+Afghanistan,11.84943,Asia
+Angola,9.71,Africa
 Albania,60.31758118,Europe
 Andorra,15.20427036,Europe
 United Arab Emirates,51.39184835,Asia
@@ -25,39 +25,39 @@ Barbados,51.39184835,North America
 Brunei,51.39184835,Asia
 Bhutan,17.70599937,Asia
 Botswana,22.90464973,Africa
-Central African Rep.,51.39184835,Africa
+Central African Rep.,4.8,Africa
 Canada,77.80229187,North America
 Switzerland,71.89392853,Europe
 Chile,96.22279358,South America
 China,67.38761902,Asia
-Cameroon,51.39184835,Africa
+Cameroon,14.27,Africa
 Colombia,58.31592178,South America
-Comoros,51.39184835,Africa
-Cabo Verde,51.39184835,Africa
+Comoros,8.4,Africa
+Cabo Verde,23.62,Africa
 Costa Rica,51.39184835,North America
 Cuba,51.07854843,North America
 Cyprus,96.53778839,Europe
 Germany,75.6655426,Europe
-Djibouti,51.39184835,Africa
+Djibouti,4.7,Africa
 Dominica,51.39184835,North America
 Denmark,83.98229218,Europe
 Dominican Rep.,58.62807846,North America
 Algeria,54.20999146,Africa
 Ecuador,51.39184835,South America
-Eritrea,51.39184835,Africa
+Eritrea,2.3,Africa
 Spain,94.59037781,Europe
 Estonia,73.15020752,Europe
-Ethiopia,51.39184835,Africa
+Ethiopia,12.55,Africa
 Finland,100.8680725,Europe
 Fiji,51.39184835,Oceania
 France,68.97485352,Europe
-Gabon,51.39184835,Africa
+Gabon,21.07821,Africa
 United Kingdom,77.01316071,Europe
 Georgia,76.82131195,Asia
 Ghana,19.18631935,Africa
 Guinea,6.718999863,Africa
-Guinea-Bissau,51.39184835,Africa
-Equatorial Guinea,51.39184835,Africa
+Guinea-Bissau,5.323,Africa
+Equatorial Guinea,7.5,Africa
 Greece,150.201767,Europe
 Grenada,51.39184835,North America
 Guatemala,51.39184835,North America
@@ -82,10 +82,10 @@ Cambodia,13.8760004,Asia
 Kiribati,51.39184835,Oceania
 Kuwait,61.55804825,Asia
 Lebanon,58.44414139,Asia
-Liberia,51.39184835,Africa
-Libya,51.39184835,Africa
+Liberia,11.92,Africa
+Libya,55.0484725,Africa
 Sri Lanka,21.36300087,Asia
-Lesotho,51.39184835,Africa
+Lesotho,16.13923,Africa
 Lithuania,71.90931702,Europe
 Luxembourg,20.73414993,Europe
 Latvia,93.4839325,Europe
@@ -101,14 +101,14 @@ Malta,73.02269745,Europe
 Myanmar,51.39184835,Asia
 Montenegro,56.82814026,Europe
 Mongolia,64.45899963,Asia
-Mozambique,51.39184835,Africa
-Mauritania,51.39184835,Africa
+Mozambique,7.52319,Africa
+Mauritania,7.21738,Africa
 Mauritius,43.95907974,Africa
 Malawi,2.411000013,Africa
 Malaysia,40.91400146,Asia
-Namibia,51.39184835,Africa
-Niger,51.39184835,Africa
-Nigeria,51.39184835,Africa
+Namibia,24.10,Africa
+Niger,5.835,Africa
+Nigeria,10.7826132,Africa
 Nicaragua,19.89999962,North America
 Netherlands,88.95426178,Europe
 Norway,93.92430115,Europe
@@ -132,12 +132,12 @@ Saudi Arabia,74.39248657,Asia
 Sudan,51.39184835,Africa
 Senegal,15.73433018,Africa
 Singapore,97.09890747,Asia
-Sierra Leone,51.39184835,Africa
+Sierra Leone,12.3214,Africa
 El Salvador,51.39184835,North America
 San Marino,56.70391083,Europe
-Somalia,51.39184835,Africa
+Somalia,4.782135,Africa
 Serbia,69.29070282,Europe
-South Sudan,51.39184835,Africa
+South Sudan,34.967,Africa
 Sao Tome and Principe,51.39184835,Africa
 Suriname,8.801739693,South America
 Slovenia,82.24004364,Europe
@@ -145,7 +145,7 @@ Sweden,85.94261932,Europe
 Eswatini,51.39184835,Africa
 Seychelles,15.47105026,Africa
 Chad,51.39184835,Africa
-Togo,51.39184835,Africa
+Togo,15.4,Africa
 Thailand,49.66899872,Asia
 Tajikistan,51.39184835,Asia
 Turkmenistan,16.41584015,Asia
@@ -155,7 +155,7 @@ Trinidad and Tobago,51.39184835,North America
 Tunisia,33.8982811,Africa
 Tuvalu,51.39184835,Oceania
 Tanzania,3.707999945,Africa
-Uganda,51.39184835,Africa
+Uganda,6.357233,Africa
 Ukraine,75.90794373,Europe
 Uruguay,75.17138672,South America
 United States of America,84.85508728,North America
@@ -163,31 +163,31 @@ Uzbekistan,21.79199982,Asia
 Vanuatu,51.39184835,Oceania
 Samoa,17.5720005,Oceania
 South Africa,25.35660934,Africa
-Zambia,51.39184835,Africa
-Zimbabwe,51.39184835,Africa
+Zambia,13.528,Africa
+Zimbabwe,8.92731,Africa
 Russia,65.873292,Europe
-Syria,57.126041,Asia
-Yemen,57.126041,Asia
-Somaliland,57.126041,Africa
-Dem. Rep. Congo,57.126041,Africa
-Gambia,57.126041,Africa
-North Korea,57.126041,Asia
-South Korea,57.126041,Asia
-Cote d'Ivoire,57.126041,Africa
-West Bank and Gaza,57.126041,Asia
-Egypt,57.126041,Africa
-Vietnam,57.126041,Asia
-Iran,57.126041,Asia
+Syria,4.543345,Asia
+Yemen,2.134,Asia
+Somaliland,5.4214,Africa
+Dem. Rep. Congo,12.67823,Africa
+Gambia,9.78742,Africa
+North Korea,26.845,Asia
+South Korea,96.3291,Asia
+Cote d'Ivoire,10.74832,Africa
+West Bank and Gaza,44.72139,Asia
+Egypt,38.9,Africa
+Vietnam,28.9731,Asia
+Iran,70.0394,Asia
 Kosovo,57.126041,Europe
 Saint Vincent and the Grenadines,57.126041,North America
-Turkey,57.126041,Asia
+Turkey,47.35879,Asia
 Saint Lucia,57.126041,North America
-Venezuela,57.126041,South America
+Venezuela,42.28911,South America
 Antigua and Barbuda,57.126041,North America
 Saint Kitts and Nevis,57.126041,North America
-Slovakia,57.126041,Europe
-Czechia,57.126041,Europe
-Taiwan,80.12%,Asia
+Slovakia,52.38,Europe
+Czechia,65.45,Europe
+Taiwan,80.12,Asia
 Bahamas,57.126041,North America
-Liechtenstein,90.56%,Europe
-S. Sudan,34.96%,Africa
+Liechtenstein,90.56,Europe
+S. Sudan,34.96,Africa
